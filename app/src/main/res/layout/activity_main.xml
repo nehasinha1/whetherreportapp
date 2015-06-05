@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button 
+            android:id="@+id/id_btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:layout_gravity="center_horizontal"/>
+    
+    <!-- Date List Container -->
+     <LinearLayout 
+        android:id="@+id/id_lin_lay_date_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+         <ListView 
+        android:id="@+id/id_list__view_dates"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="2dp"
+        android:divider="@null">
+    	</ListView>
+        
+     </LinearLayout>
+    
+    <!-- Report Details Container  -->
+    <LinearLayout 
+        android:id="@+id/id_lin_lay_report_details_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+        
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="City:"
+        android:textSize="20sp"
+        android:textColor="#FF0000" />
+        
+        <TextView
+        android:id="@+id/id_txt_city"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#000000" />
+        
+    	</LinearLayout>
+    
+    	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Country:"
+        android:textSize="20sp"
+        android:textColor="#FF0000" />
+        
+        <TextView
+            android:id="@+id/id_txt_country"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#000000" />
+    	</LinearLayout>
+    
+    	<ListView 
+        android:id="@+id/id_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="2dp"
+        android:divider="@null">
+    	</ListView>
+        
+    </LinearLayout>
+    
+    
+
+    
+
+</LinearLayout>
